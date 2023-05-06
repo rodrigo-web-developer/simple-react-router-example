@@ -43,7 +43,7 @@ const myRoutes = [{
     path: "rota/teste"
 }, {
     component: <Regex3></Regex3>,
-    path: "product/:test(guid)"
+    path: "product/:codigo(guid)/:numero(number)"
 }] as Routes;
 
 export default function Example() {
