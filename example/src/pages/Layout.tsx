@@ -1,7 +1,19 @@
+import { useCallback } from "react";
 import "../styles/app.css";
-import { RenderComponent, Link } from "simple-react-routing";
+import { RenderComponent, Link, useNavigation } from "simple-react-routing";
 
 export default function Layout() {
+    const navigator = useNavigation();
+
+    const redirectToProduct = useCallback((e: React.UIEvent<Element, UIEvent>) => {
+        navigator.navigateToRoute(e, "product-details",
+            {
+                "codigo": "ef4c3e47-f747-43ef-8962-1557caa5f8fa",
+                "numero": "42"
+            }
+        );
+    }, [navigator]);
+
     return (<div className="layout">
         <nav>
             <ul>
@@ -11,13 +23,13 @@ export default function Layout() {
                 <li><Link to="/rota/textonormal">PAGINA COM REGEX</Link></li>
                 <li><Link to="/rota/123456">PAGINA COM REGEX</Link></li>
                 <li><Link to="/rota/teste">PAGINA SEM REGEX</Link></li>
-                <li><Link to="/product/ef4c3e47-f747-43ef-8962-1557caa5f8fa/12">PAGINA REGEX TIPO GUID E NUMBER</Link></li>
+                <li><a href="" onClick={(e) => redirectToProduct(e)}>PAGINA REGEX TIPO GUID E NUMBER</a></li>
                 <li><Link to="/404">PAGINA SEM REGISTRO</Link></li>
 
             </ul>
         </nav>
         <div className="content">
-            <RenderComponent/>
+            <RenderComponent />
         </div>
     </div>)
 }

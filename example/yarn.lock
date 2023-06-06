@@ -1407,10 +1407,10 @@ shebang-regex@^3.0.0:
   resolved "https://registry.yarnpkg.com/shebang-regex/-/shebang-regex-3.0.0.tgz#ae16f1644d873ecad843b0307b143362d4c42172"
   integrity sha512-7++dFhtcx3353uBaq8DDR4NuxBetBzC7ZQOhmTQInHEd6bSrXdiEyzCvG07Z44UYdLShWUyXt5M/yhz8ekcb1A==
 
-simple-react-routing@^0.0.2:
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/simple-react-routing/-/simple-react-routing-0.0.2.tgz#d3841134fe4d0128fadd28a1c3756530576b7343"
-  integrity sha512-HVi81mipbRFkd9zcTeXZ620bMFJdF9MveS3qR+/rcXJag8Ym8n9EGYbx7yYRxWjdH89NtrKi7gMCNurGceq9Ow==
+simple-react-routing@^0.0.4:
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/simple-react-routing/-/simple-react-routing-0.0.4.tgz#a7952e7fb83bc62970d687dfbb58bb211a1b3dbc"
+  integrity sha512-UTCEJvwkPi0TwZIUDe8bgoigQeXksK+RaZCDocsKf69d4ZrNzYANK1O+8detUs0Tycr5zYDf41sWI9VitMjdpQ==
   dependencies:
     react "^18.2.0"
     react-dom "^18.2.0"
